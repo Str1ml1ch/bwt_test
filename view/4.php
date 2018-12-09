@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
     <head>
+<link rel="shortcut icon" href="images/322.png" type="image/png">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-     <title>Просмотреть фидбеки</title>
+     <title>РџСЂРѕСЃРјРѕС‚СЂРµС‚СЊ С„РёРґР±РµРєРё</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="shortcut icon" href="images/322.png" type="image/png">
@@ -19,12 +20,14 @@
    </head>
    <body>
     <div class="text-center"><font size="5" face=""Comic sans MS""><b style="color: #000000">
-      Посмотр оставленых фидбеков
+      РџРѕСЃРјРѕС‚СЂ РѕСЃС‚Р°РІР»РµРЅС‹С… С„РёРґР±РµРєРѕРІ
       </b>
     </font>
     </div>
       <?php
-    require_once 'E:\ospanel\domains\Pogoda.com123\model\select1.php';
+session_start();
+    require_once '/www/vhosts/107584/pogoda1234567.ru/model/select1.php';
+
     ?>
 
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

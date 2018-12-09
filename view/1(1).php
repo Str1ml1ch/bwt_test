@@ -1,3 +1,4 @@
+﻿
 <meta charset="utf-8">
 <style>
 body{
@@ -8,7 +9,7 @@ body{
 </style>
     <head>
       
- <link rel="shortcut icon" href="/images/123.png" type="image/png">
+ <link rel="shortcut icon" href="pogoda1234567.ru/images/123.png" type="image/png">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,22 +31,23 @@ body{
 
 
 <nav class="navbar navbar-inverse">
-
-
 <div class="container-fluid">
-
 <div class="text-right">
-
 <form method="POST" class="form-inline">
-  <div class="form-group">
-    <label><font size="4"><b style="color: #FFFFFF">Вход:</b></font></label>
-  </div>
-  <div class="form-group">
-  <!--  <div class=""> <font size="4" face="Comic sans MS" ><b style="color: #000000"  ><strong  >Вход:</strong></b></font></div> -->
-<input class="form-control" type="email" name="inlogin" placeholder="введите вашу ел.почту" autocomplete="of" required>
+ <div class="form-group">
+<div class="text-left">
+<?php
+require_once 'view/1.php';
+?>
+</div>
+</div>
+ <label><font size="4"><b style="color: #FFFFFF">Р’С…РѕРґ:</b></font></label>
+<div class="form-group">
+  <!--  <div class=""> <font size="4" face="Comic sans MS" ><b style="color: #000000"  ><strong  >Р’С…РѕРґ:</strong></b></font></div> -->
+<input class="form-control" type="email" name="inlogin" placeholder="РІРІРµРґРёС‚Рµ РІР°С€Сѓ РµР».РїРѕС‡С‚Сѓ" autocomplete="of" required>
 </div>
 <div class="form-group">
-<input class="form-control" type="password" name="inpass" placeholder="введите ваш пароль" autocomplete="of" required="">
+<input class="form-control" type="password" name="inpass" placeholder="РІРІРµРґРёС‚Рµ РІР°С€ РїР°СЂРѕР»СЊ" autocomplete="of" required="">
 </div>
 <button class="btn btn-primary" type="submit" name="logining">login</button>
  <br>
@@ -56,31 +58,28 @@ if(isset($_POST['logining']))
   require_once 'control/checklogin.php';
 }
 ?>
+</div>
 </form>
 
 
-</div>
 
 
 
 </div>
-
-
 </nav>
-
 
 <div class="text-left">
 
 <form method="POST" class="form-inline">
   <div class="form-group">
-<p class="text-left"><font size="7" face = "Comic sans MS"><b style="color: #000000"><strong>Регистрация:</strong></b></font></p>
+<p class="text-left"><font size="7" face = "Comic sans MS"><b style="color: #000000"><strong>Р РµРіРёСЃС‚СЂР°С†РёСЏ:</strong></b></font></p>
 </div>
 <br>
-<!-- форма -->
+<!-- С„РѕСЂРјР° -->
 <div class="form-group">
 
-<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Name:</strong></b></font></p><!-- ИМЯ -->
-<input class="form-control" type ="username" name="username" placeholder="введите ваше имя" autocomplete="of"  required>
+<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Name:</strong></b></font></p><!-- РРњРЇ -->
+<input class="form-control" type ="username" name="username" placeholder="РІРІРµРґРёС‚Рµ РІР°С€Рµ РёРјСЏ" autocomplete="of"  required>
 </div>
 
 <div class="form-group">
@@ -90,8 +89,8 @@ if(isset($_POST['logining']))
 <br>
 
 <div class="form-group">
-<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Surname:</strong></b></font></p><!-- Фамилия -->
-<input class="form-control" type ="login" name="login" placeholder="введите вашу фамилию" autocomplete="of" required>
+<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Surname:</strong></b></font></p><!-- Р¤Р°РјРёР»РёСЏ -->
+<input class="form-control" type ="login" name="login" placeholder="РІРІРµРґРёС‚Рµ РІР°С€Сѓ С„Р°РјРёР»РёСЋ" autocomplete="of" required>
 </div>
 <div class="form-group">
 <lable><font size="6"><b style="color: #FF0000">*</b></font></lable>
@@ -100,8 +99,8 @@ if(isset($_POST['logining']))
 <br>
 
 <div class="form-group">
-<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Email:</strong></b></font></p><!-- мыло -->
-<input class="form-control" type ="email" name="mail" placeholder="введите ваш имейл" autocomplete="of" required>
+<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Email:</strong></b></font></p><!-- РјС‹Р»Рѕ -->
+<input class="form-control" type ="email" name="mail" placeholder="РІРІРµРґРёС‚Рµ РІР°С€ РёРјРµР№Р»" autocomplete="of" required>
 </div>
 
 <div class="form-group">
@@ -111,7 +110,7 @@ if(isset($_POST['logining']))
 <br>
 
 <div class="form-group">
-<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Gender:</strong></b></font></p><!-- пол -->
+<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Gender:</strong></b></font></p><!-- РїРѕР» -->
 <select class="form-control" name="gender">
 <option>Not chose</option>
 <option >Man</option>
@@ -122,7 +121,7 @@ if(isset($_POST['logining']))
 <br>
 
 <div class="form-group">
-<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Birthday:</strong></b></font></p><!-- день рожд -->
+<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Birthday:</strong></b></font></p><!-- РґРµРЅСЊ СЂРѕР¶Рґ -->
 <select class="form-control" name ="bday">
 	<option>day</option>
 <?php
@@ -133,7 +132,7 @@ if(isset($_POST['logining']))
      ?>
  </select>
 
-<select name="bmounth" class="form-control"><!-- месяц рожд -->
+<select name="bmounth" class="form-control"><!-- РјРµСЃСЏС† СЂРѕР¶Рґ -->
 <option>Mounth</option>
 <option>January</option>
 <option>February</option>
@@ -150,7 +149,7 @@ if(isset($_POST['logining']))
 </select>
 
 
-<select class="form-control" name="byear"><!-- год рожд -->
+<select class="form-control" name="byear"><!-- РіРѕРґ СЂРѕР¶Рґ -->
 	<option>year</option>
 	<?php
     for($p=1900;$p<=2018;$p++)
@@ -163,8 +162,8 @@ if(isset($_POST['logining']))
 
 
 <div class="form-group">
-<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Password:</strong></b></font></p><!-- пароль -->
-<input class="form-control" type ="password" placeholder="введите ваш пароль" name="password1" autocomplete="of" "required>
+<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Password:</strong></b></font></p><!-- РїР°СЂРѕР»СЊ -->
+<input class="form-control" type ="password" placeholder="РІРІРµРґРёС‚Рµ РІР°С€ РїР°СЂРѕР»СЊ" name="password1" autocomplete="of" "required>
 </div>
 
 <div class="form-group">
@@ -174,8 +173,8 @@ if(isset($_POST['logining']))
 <br>
 
 <div class="form-group">
-<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Repeat password:</strong></b></font></p><!-- повторить пароль -->
-<input class="form-control" type ="password" name="retrypassword" autocomplete="of" placeholder="повторите ваш пароль"  required>
+<p class="text-left"><font size="5" face="Comic sans MS"><b style="color: #FFFFFF"><strong >Repeat password:</strong></b></font></p><!-- РїРѕРІС‚РѕСЂРёС‚СЊ РїР°СЂРѕР»СЊ -->
+<input class="form-control" type ="password" name="retrypassword" autocomplete="of" placeholder="РїРѕРІС‚РѕСЂРёС‚Рµ РІР°С€ РїР°СЂРѕР»СЊ"  required>
 </div>
 
 <div class="form-group">
@@ -185,7 +184,7 @@ if(isset($_POST['logining']))
 <br><br>
 
 <div class="form-group">
-  <p class="text-left"><button class="btn btn-primary" type ="submit" name="submit_value=">Register</button></p><!-- кнопка -->
+  <p class="text-left"><button class="btn btn-primary" type ="submit" name="submit_value=">Register</button></p><!-- РєРЅРѕРїРєР° -->
   </div>
 
 
@@ -204,10 +203,12 @@ if(isset($_POST['submit_value=']))
 
 
 
+
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
 </div>
 </body>
+
 
